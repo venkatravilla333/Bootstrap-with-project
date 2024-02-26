@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="mt-5 ms-5">
+
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="sachin!">Hover</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="sachin!">Hover</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="sachin!">Hover</a>
+    <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="sachin!">Hover</a>
+  </div>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+
+</body>
+</html>

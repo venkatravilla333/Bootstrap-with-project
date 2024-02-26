@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <form>
+    <label for="myid"  class="form-label">User name</label>
+    <input type="text" id="myid" class="form-control">
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <label for="comment">Comments:</label>
+    <textarea class="form-control" rows="10" id="comment" name="text"></textarea>
+
+    <div class="row">
+      <div class="col-2">
+        <input type="text" class="form-control-sm" placeholder="Enter email" name="email">
+      </div>
+      <div class="col-8">
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="col-2">
+        <input type="password" class="form-control-lg" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+    <input type="text" class="form-control" placeholder="Normal input">
+    <input type="text" class="form-control" placeholder="Disabled input" disabled>
+    <input type="text" class="form-control" placeholder="Readonly input" readonly>
+    <input type="text" class="form-control-plaintext" placeholder="Plaintext input">
+    <input type="text" class="form-control" placeholder="Normal input">
+    <input type="color" class="form-control form-control-color" value="#CCCCCC">
+
+    <select class="form-select">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <select class="form-select" disabled>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <label for="browser" class="form-label">Choose your browser from the list:</label>
+    <input class="form-control" list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+      <label class="form-check-label" for="mySwitch">Dark Mode</label>
+    </div>
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange">
+
+    <div class="input-group">
+      <span class="input-group-text">@</span>
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Your Email">
+      <span class="input-group-text">@example.com</span>
+    </div>
+    <div class="input-group mt-3 mb-3">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Link 1</a></li>
+        <li><a class="dropdown-item" href="#">Link 2</a></li>
+        <li><a class="dropdown-item" href="#">Link 3</a></li>
+      </ul>
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <div class="form-floating mb-3 mt-3">
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label for="email">Email</label>
+    </div>
+    
+    <div class="form-floating mt-3 mb-3">
+      <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      <label for="pwd">Password</label>
+    </div>
+    <form action="/action_page.php" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </form>
+</body>
+</html>
